@@ -104,12 +104,12 @@ async def my_event_handler(m):
                             text,
                             link_preview=False,
                             file='scrap.jpg')
-  await asyncio.sleep(38)
+  await asyncio.sleep(8)
 
 
 @client.on(events.NewMessage(outgoing=True, pattern=re.compile(r'.lives')))
 async def my_event_handler(m):
-  # emt = await client.get_entity(1582775844)
+  # emt = await client.get_entity(2183654560)
   # print(telethon.utils.get_input_channel(emt))
   # print(telethon.utils.resolve_id(emt))
   await m.reply(file='cards.txt')# الملف اللي ينحفظ فيه السكراب اللي ينزل بلقناه
